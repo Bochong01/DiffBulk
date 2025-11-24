@@ -254,5 +254,9 @@ def cmdline(outdir, dry_run, **opts):
 
 if __name__ == "__main__":
     cmdline()
+    import torch.distributed as dist
+    if dist.is_initialized():
+        dist.destroy_process_group()
 
 #----------------------------------------------------------------------------
+
