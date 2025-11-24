@@ -5,7 +5,7 @@ test_gene_file: "/path/to//test_gene.h5"
 # pretrained model
 diffusion_path: "/path/to/ema"
 # ckpt
-fusion_net_path: "/mnt/iMVR/bochong/project/Diffbulk/fm_ablation/plip/ckpt/checkpoint_best.pth"
+fusion_net_path: "/path/to/checkpoint_best.pth"
 device: cuda
 batch_size: 32
 

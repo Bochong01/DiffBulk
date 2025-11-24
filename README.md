@@ -2,7 +2,7 @@
 DiffBulk introduces a two-stage framework for learning gene-aware histology image representations via conditional diffusion modeling.
 The model first pretrains a diffusion network conditioned on gene expression, then finetunes a lightweight gene-expression prediction branch for downstream spatial transcriptomic tasks.
 
-<p align="center"> <img src="/assets/DiffBulk.png" width="70%" /> </p>
+<p align="center"> <img src="./assets/DiffBulk.png" width="100%" /> </p>
 
 ## 🚀 Key Features
 - **Two-stage training**:
@@ -61,7 +61,6 @@ python reconstruct_phema.py \
 
 ### 🔬 Stage II: Downstream Gene Expression Training
 **1. Configure `config.yaml`**
-Set <GENE_DIM> to the total number of target genes.
 - <GENE_DIM>: The number of genes to be detected.
 ```yaml
 # data
@@ -143,3 +142,11 @@ fi
 
 echo "All tests completed. Results saved to $OUTPUT_CSV"
 ```
+
+### ▶️ Google Colab Demo
+
+We also provide an interactive notebook `DiffBulk_colab.ipynb`, allowing you to try the DiffBulk framework directly in Google Colab without local setup.
+
+**Click below to open the Colab notebook:**
+
+<p align="left"> <a href="https://colab.research.google.com/drive/1M1MOUnfpRbZZzlr6wJZOuW9e6K20B88Q#scrollTo=fxJcLMKMYeDt" target="_blank"> <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/> </a> </p>
