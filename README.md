@@ -73,7 +73,7 @@ valid_gene_file: "/path/to/downstream/valid_gene.h5"
 diffusion_path: "/path/to/pretrained/diffusion/ema"
 
 # hyper-parameters
-noise_label: 0.1
+noise_label: 0.01
 out_dim: <GENE_DIM>
 fusion_method: 'gated_residual'
 c: 1.0
